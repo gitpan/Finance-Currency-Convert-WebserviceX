@@ -1,11 +1,11 @@
-# $Id: WebserviceX.pm 393 2005-03-11 01:29:56Z claco $
+# $Id: WebserviceX.pm 396 2005-03-15 01:33:54Z claco $
 package Finance::Currency::Convert::WebserviceX;
 use strict;
 use warnings;
 use vars qw($VERSION);
 use LWP::UserAgent;
 
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 sub new {
     my $class = shift;
