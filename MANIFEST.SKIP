@@ -1,0 +1,13 @@
+# $Id: MANIFEST.SKIP 374 2005-03-10 02:22:31Z claco $
+\bRCS\b
+\bCVS\b
+,v$
+\B\.svn\b
+^blib/
+^pm_to_blib
+^MakeMaker-\d
+Makefile.old
+Makefile$
+\.db
+t/TEST$
+t/SMOKE$

@@ -1,0 +1,4 @@
+$Id: Todo 374 2005-03-10 02:22:31Z claco $
+TODO list for Perl module Finance::Currency::Convert::WebserviceX
+
+    - Mimic various ::Convert APIs to facilitate drop-in replacement
