@@ -1,4 +1,4 @@
-# $Id: Makefile.PL 374 2005-03-10 02:22:31Z claco $
+# $Id: Makefile.PL 464 2005-03-21 23:59:53Z claco $
 use ExtUtils::MakeMaker;
 use strict;
 use warnings FATAL => 'all';
@@ -14,5 +14,9 @@ WriteMakefile(
         'HTTP::Response' => undef
     },
     (ExtUtils::MakeMaker->VERSION >= 6.11) ?
-    (NO_META      => 1) : ()
+    (NO_META      => 1) : (),
+
+    dist => {
+        PREOP => 'pod2text lib/Finance/Currency/Convert/WebserviceX.pm > $(DISTVNAME)/README',
+    }
 );
