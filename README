@@ -8,8 +8,8 @@ SYNOPSIS
         my $result = $cc->convert(1.95, 'USD', 'JPY');
 
 DESCRIPTION
-    This is a lightweight module to do currency conversion using the Curency
-    Convertor web service at http://www.webservicex.net/.
+    This is a lightweight module to do currency conversion using the
+    Currency Converter web service at http://www.webservicex.net/.
 
     The motivation for this module was many fold. First,
     Finance::Currency::Convert with Finance::Quote was a little too bulky

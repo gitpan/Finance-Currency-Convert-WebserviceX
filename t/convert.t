@@ -1,5 +1,5 @@
 #!perl -wT
-# $Id: convert.t 394 2005-03-11 01:30:20Z claco $
+# $Id: /local/Finance-Currency-Convert-WebserviceX/trunk/t/convert.t 1606 2007-06-30T22:00:59.041198Z claco  $
 use strict;
 use warnings;
 use Test::More tests => 12;

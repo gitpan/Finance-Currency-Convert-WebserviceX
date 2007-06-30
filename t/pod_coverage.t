@@ -1,14 +1,20 @@
 #!perl -wT
-# $Id: pod_coverage.t 374 2005-03-10 02:22:31Z claco $
+# $Id: /local/Finance-Currency-Convert-WebserviceX/trunk/t/pod_coverage.t 1606 2007-06-30T22:00:59.041198Z claco  $
 use strict;
 use warnings;
-use Test::More;
 
-eval 'use Test::Pod::Coverage 1.04';
-plan skip_all => 'Test::Pod::Coverage 1.04' if $@;
+BEGIN {
+    use lib 't/lib';
+    use Test::More;
 
-eval 'use Pod::Coverage 0.14';
-plan skip_all => 'Pod::Coverage 0.14 not installed' if $@;
+    plan skip_all => 'set TEST_AUTHOR to enable this test' unless $ENV{TEST_AUTHOR};
+
+    eval 'use Test::Pod::Coverage 1.04';
+    plan skip_all => 'Test::Pod::Coverage 1.04' if $@;
+
+    eval 'use Pod::Coverage 0.14';
+    plan skip_all => 'Pod::Coverage 0.14 not installed' if $@;
+};
 
 my $trustme = {
     trustme =>

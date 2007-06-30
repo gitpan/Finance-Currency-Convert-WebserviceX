@@ -1,14 +1,25 @@
 Changes
+inc/Module/AutoInstall.pm
+inc/Module/Install.pm
+inc/Module/Install/AutoInstall.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Include.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/MakeMaker.pm
+inc/Module/Install/Metadata.pm
 lib/Finance/Currency/Convert/WebserviceX.pm
 LICENSE
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 MANIFEST.SKIP
 META.yml
-README
 t/basic.t
 t/convert.t
+t/manifest.t
 t/pod_coverage.t
+t/pod_spelling.t
 t/pod_syntax.t
 t/strict.t
+t/style_no_tabs.t
+t/warnings.t
 Todo

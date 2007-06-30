@@ -1,5 +1,9 @@
-$Id: Changes 464 2005-03-21 23:59:53Z claco $
+$Id: /local/Finance-Currency-Convert-WebserviceX/trunk/Changes 1606 2007-06-30T22:00:59.041198Z claco  $
 Revision history for Perl module Finance::Currency::Convert::WebserviceX
+
+0.06000 Sat June 30 17:54:56 2007
+    - Converted to Module::Install
+    - Added more culted tests
 
 0.05 Mon Mar 21 18:56:24 2005
     - Added Test::Strict warnings_ok tests

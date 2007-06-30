@@ -1,11 +1,11 @@
-# $Id: WebserviceX.pm 464 2005-03-21 23:59:53Z claco $
+# $Id: /local/Finance-Currency-Convert-WebserviceX/trunk/lib/Finance/Currency/Convert/WebserviceX.pm 1606 2007-06-30T22:00:59.041198Z claco  $
 package Finance::Currency::Convert::WebserviceX;
 use strict;
 use warnings;
 use vars qw($VERSION);
 use LWP::UserAgent;
 
-$VERSION = '0.05';
+$VERSION = '0.06000';
 
 sub new {
     my $class = shift;
@@ -66,15 +66,15 @@ Finance::Currency::Convert::WebserviceX - Lightweight currency conversion using 
 
 =head1 DESCRIPTION
 
-This is a lightweight module to do currency conversion using the Curency Convertor
-web service at http://www.webservicex.net/.
+This is a lightweight module to do currency conversion using the Currency
+Converter web service at http://www.webservicex.net/.
 
-The motivation for this module was many fold. First, L<Finance::Currency::Convert>
-with L<Finance::Quote> was a little too bulky for my needs, esp the need to download
-or maintain conversion tables. L<Finance::Currency::Convert::Yahoo> seemed to be
-based on screen scraping. Way to fragile for my taste.
-L<Finance::Currency::Convert::XE> has usage restrictions from XE.com.
-[No offense intended to any of the authors above]
+The motivation for this module was many fold. First,
+L<Finance::Currency::Convert> with L<Finance::Quote> was a little too bulky for
+my needs, esp the need to download or maintain conversion tables.
+L<Finance::Currency::Convert::Yahoo> seemed to be based on screen scraping. Way
+to fragile for my taste. L<Finance::Currency::Convert::XE> has usage
+restrictions from XE.com. [No offense intended to any of the authors above]
 
 =head1 CONSTRUCTOR
 
