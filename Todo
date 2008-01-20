@@ -1,4 +1,4 @@
-$Id: /local/Finance-Currency-Convert-WebserviceX/trunk/Todo 1591 2005-03-10T03:59:21.884542Z claco  $
+$Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/Todo 1252 2005-03-10T03:59:21.884542Z claco  $
 TODO list for Perl module Finance::Currency::Convert::WebserviceX
 
     - Mimic various ::Convert APIs to facilitate drop-in replacement

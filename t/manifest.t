@@ -1,5 +1,5 @@
 #!perl -wT
-# $Id: /local/Finance-Currency-Convert-WebserviceX/trunk/t/manifest.t 1606 2007-06-30T22:00:59.041198Z claco  $
+# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/t/manifest.t 1268 2008-01-20T05:58:09.220555Z claco  $
 use strict;
 use warnings;
 
@@ -8,6 +8,7 @@ BEGIN {
     use Test::More;
 
     plan skip_all => 'set TEST_AUTHOR to enable this test' unless $ENV{TEST_AUTHOR};
+    plan skip_all => 'run make manifest to generate MANIFEST' unless -e 'MANIFEST';
 
     eval 'use Test::CheckManifest 0.09';
     if($@) {

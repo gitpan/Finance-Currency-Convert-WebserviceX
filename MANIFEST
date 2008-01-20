@@ -3,10 +3,14 @@ inc/Module/AutoInstall.pm
 inc/Module/Install.pm
 inc/Module/Install/AutoInstall.pm
 inc/Module/Install/Base.pm
+inc/Module/Install/Build.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
 inc/Module/Install/Include.pm
 inc/Module/Install/Makefile.pm
-inc/Module/Install/MakeMaker.pm
 inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
 lib/Finance/Currency/Convert/WebserviceX.pm
 LICENSE
 Makefile.PL
@@ -16,7 +20,9 @@ META.yml
 README
 t/basic.t
 t/convert.t
+t/convert_live.t
 t/manifest.t
+t/meta.t
 t/pod_coverage.t
 t/pod_spelling.t
 t/pod_syntax.t

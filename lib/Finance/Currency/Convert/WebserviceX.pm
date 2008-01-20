@@ -1,11 +1,11 @@
-# $Id: /local/Finance-Currency-Convert-WebserviceX/trunk/lib/Finance/Currency/Convert/WebserviceX.pm 1743 2007-07-14T01:56:49.614820Z claco  $
+# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/lib/Finance/Currency/Convert/WebserviceX.pm 1268 2008-01-20T05:58:09.220555Z claco  $
 package Finance::Currency::Convert::WebserviceX;
 use strict;
 use warnings;
 use vars qw($VERSION);
-use LWP::UserAgent;
+use LWP::UserAgent ();
 
-$VERSION = '0.06001';
+$VERSION = '0.06002';
 
 sub new {
     my $class = shift;
@@ -43,7 +43,7 @@ sub convert {
     if (!$self->{'response'}->is_success) {
         return undef;
     } else {
-        if ($self->{'response'}->content =~ /<double.*>(.*)<\/double>/i) {
+        if (($self->{'response'}->content || '') =~ /<double.*>(.*)<\/double>/i) {
             return $value*($1 || 1);
         } else {
             return undef;

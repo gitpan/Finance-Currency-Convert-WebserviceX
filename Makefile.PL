@@ -1,4 +1,4 @@
-# $Id: /local/Finance-Currency-Convert-WebserviceX/trunk/Makefile.PL 1606 2007-06-30T22:00:59.041198Z claco  $
+# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/Makefile.PL 1268 2008-01-20T05:58:09.220555Z claco  $
 use strict;
 use warnings;
 use inc::Module::Install 0.65;
@@ -14,10 +14,9 @@ requires 'HTTP::Response';
 tests 't/*.t t/*/*.t';
 clean_files 'Finance-Currency-Convert-WebserviceX-* t/var';
 
-auto_install;
+eval {
+    system 'pod2text lib/Finance/Currency/Convert/WebserviceX.pm > README';
+};
 
-WriteMakefile(
-  dist => {
-    PREOP => 'pod2text lib/Finance/Currency/Convert/WebserviceX.pm > $(DISTVNAME)/README'
-  }
-);
+auto_install;
+WriteAll;

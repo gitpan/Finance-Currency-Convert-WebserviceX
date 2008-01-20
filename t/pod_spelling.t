@@ -1,5 +1,5 @@
 #!perl -w
-# $Id: /local/Finance-Currency-Convert-WebserviceX/trunk/t/pod_spelling.t 1606 2007-06-30T22:00:59.041198Z claco  $
+# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/t/pod_spelling.t 1262 2007-06-30T21:59:49.377102Z claco  $
 use strict;
 use warnings;
 
