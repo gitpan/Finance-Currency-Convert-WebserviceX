@@ -1,12 +1,12 @@
 #!perl -wT
-# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/t/convert_live.t 1268 2008-01-20T05:58:09.220555Z claco  $
+# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/t/convert_live.t 1665 2008-06-04T00:20:50.790988Z claco  $
 use strict;
 use warnings;
 use Test::More;
 
 BEGIN {
     plan skip_all => 'set TEST_AUTHOR to enable this test' unless $ENV{TEST_AUTHOR};
-    plan tests => 12;
+    plan tests => 14;
 
     use_ok('Finance::Currency::Convert::WebserviceX');
 };
@@ -28,7 +28,9 @@ BEGIN {
     my $cc = Finance::Currency::Convert::WebserviceX->new;
     isa_ok($cc, 'Finance::Currency::Convert::WebserviceX');
 
+    ok(!exists $cc->cache->{'USD-JPY'});
     isnt($cc->convert(2.00, 'USD', 'JPY'), undef);
+    ok(exists $cc->cache->{'USD-JPY'});
 };
 
 ## make sure we uc the from/to

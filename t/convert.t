@@ -1,5 +1,5 @@
 #!perl -wT
-# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/t/convert.t 1268 2008-01-20T05:58:09.220555Z claco  $
+# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/t/convert.t 1665 2008-06-04T00:20:50.790988Z claco  $
 use strict;
 use warnings;
 use Test::More;
@@ -9,7 +9,7 @@ BEGIN {
     if (!$@) {
         plan tests => 14;
 
-        my @responses = ('<double>1.23</double>', '<double>1.23</double>', '<double>1.00</double>', undef);
+        my @responses = ('<double>1.23</double>', '<double>1.23</double>', undef);
         Test::MockObject->fake_module('HTTP::Response' => (
             is_success => sub {1;},
             content => sub {return shift @responses}

@@ -1,5 +1,9 @@
-$Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/Changes 1268 2008-01-20T05:58:09.220555Z claco  $
+$Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/Changes 1665 2008-06-04T00:20:50.790988Z claco  $
 Revision history for Perl module Finance::Currency::Convert::WebserviceX
+
+0.07000 Tue June 3 19:36:46 2008
+    - Added caching of webservice results; default of 300 seconds per from/to
+        pair of currency codes
 
 0.06002 Sun Jan 20 12:51:43 2007
     - Updated broken META.yml

@@ -54,11 +54,15 @@ METHODS
         "value" to be converted to. See Locale::Currency for the available
         currency codes.
 
+  cache
+    Gets the reference to the cache hash.
+
 SEE ALSO
-    Locale::Currency, Finance::Currency::Format
+    Locale::Currency, Finance::Currency::Format, Memoize::Expire
 
 AUTHOR
         Christopher H. Laco
         CPAN ID: CLACO
         claco@chrislaco.com
         http://today.icantfocus.com/blog/
+
