@@ -1,4 +1,4 @@
-# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/Makefile.PL 1665 2008-06-04T00:20:50.790988Z claco  $
+# $Id$
 use strict;
 use warnings;
 use inc::Module::Install 0.65;

@@ -1,5 +1,5 @@
 #!perl -wT
-# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/t/manifest.t 1268 2008-01-20T05:58:09.220555Z claco  $
+# $Id$
 use strict;
 use warnings;
 

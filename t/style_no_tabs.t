@@ -1,5 +1,5 @@
 #!perl -wT
-# $Id: /local/CPAN/Finance-Currency-Convert-WebserviceX/t/style_no_tabs.t 1262 2007-06-30T21:59:49.377102Z claco  $
+# $Id$
 use strict;
 use warnings;
 
